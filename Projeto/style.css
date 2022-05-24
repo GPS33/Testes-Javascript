@@ -26,6 +26,7 @@ main{
 }
 .lamBtn > *{
     background-color: gray;
+    color: #fff;
 }
 .titles{
     font-size: 50px;
@@ -57,9 +58,6 @@ main{
     float: center;
     padding: 8px;
     overflow: hidden;
-}
-button.selected {
-    color: red;
 }
 .row > *:hover{
     background-color: aqua;
