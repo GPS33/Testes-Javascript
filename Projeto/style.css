@@ -1,0 +1,86 @@
+* {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    overflow: hidden;
+}
+body{
+    background-color: orange;
+    height: 100%;
+}
+main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#lampDiv{
+    display: none;
+}
+.lamBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.titles{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    float: center;
+    justify-content: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 5px;
+}
+.row > *{
+    color: rgb(255, 255, 255);
+    background-color: rgb(112, 112, 112);
+    border: 1px solid aliceblue;
+    border-radius: 3px;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    display:inline;
+    float: center;
+    padding: 8px;
+    overflow: hidden;
+}
+button.selected {
+    color: red;
+}
+.row > *:hover{
+    background-color: aqua;
+    color: #000;
+    border: 4px solid rgb(112, 112, 112);
+    
+}
+select {
+    float: right;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    
+  }
+.d{
+    display: flex;  
+    justify-content: right;
+    margin-left: auto;
+    padding: 10px;
+    width: 100%;
+}
+#colorpicker{
+    outline: none;
+    border: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
