@@ -40,6 +40,14 @@ Lampada.addEventListener('click', hideLamp);
 
 //LÂMPADA-----------------------------------------------
 
+//EDITOR DE TEXTO---------------------------------------
+const elements = document.querySelectorAll('.btn');
+
+elements.forEach(element =>){
+    element.addEventListener('click',()=> {
+        let command = element.dataset['element'];
+    })
+};
 
 
 
@@ -53,10 +61,7 @@ Lampada.addEventListener('click', hideLamp);
 
 
 
-
-
-
-
+//EDITOR DE TEXTO---------------------------------------
 
 //MUDAR BACKGROUND--------------------------------------
 function changecolor(getcolo){

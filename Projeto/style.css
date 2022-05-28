@@ -3,6 +3,7 @@
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
     overflow: hidden;
+    
 }
 body{
     background-color: orange;
@@ -17,17 +18,6 @@ main{
 #lampDiv{
     display: none;
 }
-.lamBtn{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    
-}
-.lamBtn > *{
-    background-color: gray;
-    color: #fff;
-}
 .titles{
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
@@ -36,6 +26,19 @@ main{
     justify-content: center;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.lamBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.lamBtn > *{
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    background-color: rgb(112, 112, 112);
+    border: 1px solid aliceblue;
+    border-radius: 3px;
 }
 .row{
     display: flex;
@@ -85,4 +88,38 @@ select {
     width: 1.5rem;
     height: 1.5rem;
 }
+.textDiv-header{
+    height:38px;
+    width: 449.47px;
+    max-height:38px;
+    max-width: 449.47px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
+    background-color: aliceblue;
+    border-radius: 10px;
+    
+}
+.textDiv-header> *:hover{
+    background-color: aqua;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main-textEd{
+    
+}
+.content{
+    margin-top: 5px;
+    padding: 100px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    min-height: 200px;
+    min-width: 449.47px;
+    max-height:243px;
+    max-width: 449.47px;
+    padding: 20px;
+    overflow:auto;
+}
