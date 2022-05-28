@@ -14,7 +14,7 @@
     <div class="titles">Testes Javascript</div>      
     <div class="row">
         <button id="Lampada">Lâmpada</button>
-        <button>Editor de texto</button>
+        <button id="Text">Editor de texto</button>
         <button>Desenhar</button>
     </div>
     <main>
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="main-textEd">
+        <div id="main-textEd">
             <div class="textDiv-header">
                 <button type="button" class="btn" data-element="bold">
                     <i class="fa fa-bold"></i>
@@ -64,9 +64,9 @@
                     <i class="fa fa-image"></i>
                 </button>
             </div>
-               
+            <div class="content" contenteditable="true"></div>
         </div>
-        <div class="content" contenteditable="true"></div>
+        
     </main>
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
