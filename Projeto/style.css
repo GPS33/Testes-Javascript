@@ -1,8 +1,10 @@
 * {
     box-sizing:border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
-    overflow: hidden;
+    
     
 }
 body{
@@ -122,4 +124,55 @@ main{
     max-width: 449.47px;
     padding: 20px;
     overflow:auto;
+}
+
+.canvas-div{
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+}
+canvas{
+    box-shadow: -3px 2px 9px 6px black;
+    cursor: pointer;
+    margin: 15px;   
+}
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.tools .color-field{
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    align-self: center;
+}
+.pick-clr{
+    align-self: center;
+    margin: 0 10px;
+    height: 50px;
+    min-width: 25px;
+}
+.pen-range{
+    align-self: center;
+    margin: 0 10px;
+}
+#button{
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+    margin: 0 10px;
 }
