@@ -1,3 +1,10 @@
+import ReactDOM from "react-dom";
+import App from './App'
+import './index.css'
+
+ReactDOM.render(<App/>, document.querySelector("#root"));
+
+
 //LÂMPADA-----------------------------------------------
 const ligar = document.getElementById ('ligar');
 const desligar = document.getElementById ('desligar');
