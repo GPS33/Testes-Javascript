@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <div>
         <div class="d">
-        <input type="color" id="colorpicker">
+        <input type="color" id="colorpicker"/>
     </div>
     <div class="titles">Testes Javascript</div>      
     <div class="row">
@@ -18,7 +18,7 @@ const Page = () => {
     <main>
         <div id='lampDiv'>
             <div>
-                <img src="../src/Assets/desligada.png" alt="Lâmpadadesligada" id="lamp">  
+                <img src="../src/Assets/desligada.png" alt="Lâmpadadesligada" id="lamp"/>  
             </div>
             <div class="lamBtn">
                 <button id="ligar">Acender</button>
@@ -77,8 +77,8 @@ const Page = () => {
                 <div onclick="change_color(this)" class="color-field" style="background: green;"></div>
                 <div onclick="change_color(this)" class="color-field" style="background: yellow;"></div>
                 
-                <input oninput="draw_color = this.value" type="color" class="pick-clr">
-                <input oninput="draw_width = this.value" type="range" min="1" max="500" class="pen-range"> 
+                <input oninput="draw_color = this.value" type="color" class="pick-clr"/>
+                <input oninput="draw_width = this.value" type="range" min="1" max="500" class="pen-range"/> 
             </div>
         </div>
     </main>
